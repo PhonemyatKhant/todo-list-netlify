@@ -1,0 +1,129 @@
+@import "_colors";
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Varela Round";
+  color: color("light");
+  background-color: color("light");
+}
+button,
+input,
+select,
+option {
+  font-family: "Varela Round";
+  color: color("light");
+}
+input {
+  border: 1px solid color("light");
+
+  outline: none;
+  color: color("dark");
+}
+
+button {
+  background-color: color("dark");
+  padding: 0.3rem;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.completed {
+  span {
+    text-decoration: line-through;
+  }
+}
+.alert.error {
+  background-color: rgb(218, 12, 47);
+}
+.alert.success {
+  background-color: rgb(12, 218, 81);
+}
+.hero {
+  position: relative;
+  padding: 1rem;
+  text-align: center;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 3rem;
+  max-width: 450px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.685);
+  border-radius: 15px;
+  background-color: color("dark");
+  .title {
+    margin-top: 2rem;
+    color: color("light");
+    span {
+      color: color("light");
+    }
+  }
+  .alert {
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 5px;
+    color: color("light");
+  }
+
+  form {
+    @extend .flex;
+    justify-content: center;
+    align-items: stretch;
+    input {
+      font-weight: bold;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      flex: 1;
+    }
+    .submit-btn {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      background-color: color("light");
+      color: color("dark");
+      font-weight: bold;
+    }
+    select {
+      cursor: pointer;
+      border-radius: 3px;
+      outline: none;
+      margin-left: 1rem;
+      color: color("dark");
+      font-weight: bold;
+      option {
+        font-weight: bold;
+        color: color("dark");
+      }
+    }
+  }
+  .list-container {
+    .list {
+      margin: 1rem 0;
+      border-bottom: 1px solid color("light");
+      border-end-end-radius: 1px;
+      @extend .flex;
+      justify-items: stretch;
+      justify-content: space-between;
+
+      .btn-container {
+        @extend .flex;
+        align-items: stretch;
+      }
+    }
+  }
+  .delete-btn {
+    border-radius: 5px;
+    border: 2px solid color("dark");
+    background-color: color("light");
+    color: color("dark");
+    font-weight: bold;
+    margin: 2rem auto 1rem auto;
+  }
+}

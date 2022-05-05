@@ -1,0 +1,9 @@
+$colors: (
+  "light": #eeefef,
+  "dark": #262829,
+  "primary": #fedb00,
+  "btn": #7128df,
+);
+@function color($color) {
+  @return map-get($colors, $color);
+}

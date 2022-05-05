@@ -1,0 +1,153 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Varela Round";
+  color: #eeefef;
+  background-color: #eeefef;
+}
+
+button,
+input,
+select,
+option {
+  font-family: "Varela Round";
+  color: #eeefef;
+}
+
+input {
+  border: 1px solid #eeefef;
+  outline: none;
+  color: #262829;
+}
+
+button {
+  background-color: #262829;
+  padding: 0.3rem;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+}
+
+.flex, .hero form, .hero .list-container .list, .hero .list-container .list .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.completed span {
+  text-decoration: line-through;
+}
+
+.alert.error {
+  background-color: #da0c2f;
+}
+
+.alert.success {
+  background-color: #0cda51;
+}
+
+.hero {
+  position: relative;
+  padding: 1rem;
+  text-align: center;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 3rem;
+  max-width: 450px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.685);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.685);
+  border-radius: 15px;
+  background-color: #262829;
+}
+
+.hero .title {
+  margin-top: 2rem;
+  color: #eeefef;
+}
+
+.hero .title span {
+  color: #eeefef;
+}
+
+.hero .alert {
+  position: absolute;
+  width: 80%;
+  margin: 0 auto;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-radius: 5px;
+  color: #eeefef;
+}
+
+.hero form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.hero form input {
+  font-weight: bold;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.hero form .submit-btn {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #eeefef;
+  color: #262829;
+  font-weight: bold;
+}
+
+.hero form select {
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  margin-left: 1rem;
+  color: #262829;
+  font-weight: bold;
+}
+
+.hero form select option {
+  font-weight: bold;
+  color: #262829;
+}
+
+.hero .list-container .list {
+  margin: 1rem 0;
+  border-bottom: 1px solid #eeefef;
+  border-end-end-radius: 1px;
+  justify-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .list-container .list .btn-container {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.hero .delete-btn {
+  border-radius: 5px;
+  border: 2px solid #262829;
+  background-color: #eeefef;
+  color: #262829;
+  font-weight: bold;
+  margin: 2rem auto 1rem auto;
+}
+/*# sourceMappingURL=styles.css.map */
